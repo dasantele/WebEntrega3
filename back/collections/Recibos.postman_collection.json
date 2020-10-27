@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "28f5cab4-cd6c-4be3-a957-9d28ceb01ca1",
+		"name": "Recibos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Receipt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\": \"2020-10-10 14:00\",\r\n    \"valor\": 50000,\r\n    \"idPublicacion\": \"5f94f42bfc63802d60ffd4af\",\r\n    \"idVendedor\": \"5f947b9300b1244a50621015\",\r\n    \"idCliente\": \"5f9449d629b9d01ab49682bd\",\r\n    \"calificacionVendedor\": 5,\r\n    \"calificacionCliente\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/recibos",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"recibos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Receipt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/recibos/5f950dab2b3f5d2510e1bb11",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"recibos",
+						"5f950dab2b3f5d2510e1bb11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Receipt",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"5f9485eadd4b7843581330e5\",\r\n    \"fecha\": \"2020-10-10 14:00\",\r\n    \"valor\": 50000,\r\n    \"idPublicacion\": \"5f94f42bfc63802d60ffd4af\",\r\n    \"idVendedor\": \"5f947b9300b1244a50621015\",\r\n    \"idCliente\": \"5f9449d629b9d01ab49682bd\",\r\n    \"calificacionVendedor\": 5,\r\n    \"calificacionCliente\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/recibos/",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"recibos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Receipt",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/recibos/5f950dab2b3f5d2510e1bb11",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"recibos",
+						"5f950dab2b3f5d2510e1bb11"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

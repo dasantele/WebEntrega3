@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "28a9f7a9-4a1d-4815-84d3-5560d7ff7347",
+		"name": "Publicacion - back - web3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "delete publicacion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones/5f986b99e85a770017180106",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones",
+						"5f986b99e85a770017180106"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put publicacion por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"5f986b99e85a770017180106\",\n    \"ciudad\": \"Bogotá D.C\",\n    \"tipoVenta\": \"intercambio\",\n    \"descuento\": \"10\",\n    \"titulo\": \"Quiero cambiar Mario Kart 8 para Nintendo Switch\",\n    \"descripcion\": \"Hola! tengo este juego hace un par de meses y quisiera cambiarlo proximamente por otro! recibo ofertas\",\n    \"opiniones\": [],\n    \"estado\": \"disponible\",\n    \"precio\": 40000,\n    \"id_producto\": \"5f9857c59ebcc8001725a105\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones/",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put publicacion por id (volver original)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"5f986b99e85a770017180106\",\n    \"ciudad\": \"Bogotá D.C\",\n    \"tipoVenta\": \"intercambio\",\n    \"descuento\": \"10\",\n    \"titulo\": \"Quiero cambiar Mario Kart 8 para Nintendo Switch\",\n    \"descripcion\": \"Hola! tengo este juego hace un par de meses y quisiera cambiarlo proximamente por otro! recibo ofertas\",\n    \"opiniones\": [],\n    \"estado\": \"disponible\",\n    \"precio\": 90000,\n    \"id_producto\": \"5f9857c59ebcc8001725a105\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones/",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get publicaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get publicacion por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones/5f985b0a9ebcc8001725a10a",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones",
+						"5f985b0a9ebcc8001725a10a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "publicacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_vendedor\": \"5f985a109ebcc8001725a107\",\n    \"fechaPublicacion\": \"2020-09-13\",\n    \"ciudad\": \"Bogotá D.C\",\n    \"tipoVenta\": \"Intercambio\",\n    \"descuento\": \"0\",\n    \"titulo\": \"Quiero cambiar Mario Kart 8 para Nintendo Switch\",\n    \"descripcion\": \"Hola! tengo este juego hace un par de meses y quisiera cambiarlo proximamente por otro! recibo ofertas\",\n    \"opiniones\": [],\n    \"estado\": \"disponible\",\n    \"precio\": 60000,\n    \"id_producto\": \"5f9857c59ebcc8001725a105\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "publicacion 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_vendedor\": \"5f9859bd9ebcc8001725a106\",\n    \"fechaPublicacion\": \"2020-06-30\",\n    \"ciudad\": \"Bogotá D.C\",\n    \"tipoVenta\": \"Venta\",\n    \"descuento\": \"0\",\n    \"titulo\": \"Vendo juego Advengers casi nuevo\",\n    \"descripcion\": \"Hola! le compré el juego a mi hermano y no le gustó, quisiera venderlo! para PS4\",\n    \"opiniones\": [],\n    \"estado\": \"disponible\",\n    \"precio\": 150000,\n    \"id_producto\": \"5f9851de9ebcc8001725a0fb\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "publicacion 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_vendedor\": \"5f947b9300b1244a50621015\",\n    \"fechaPublicacion\": \"2020-02-02\",\n    \"ciudad\": \"Bogotá D.C\",\n    \"tipoVenta\": \"Venta\",\n    \"descuento\": \"0\",\n    \"titulo\": \"Vendo Battlefield V, excelente estado para xbox\",\n    \"descripcion\": \"Hola! quiero comprar otro juego, lo entrego con el pase de batalla!\",\n    \"opiniones\": [],\n    \"estado\": \"disponible\",\n    \"precio\": 70000,\n    \"id_producto\": \"5f9854ca9ebcc8001725a100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gaymers06.herokuapp.com/publicaciones",
+					"protocol": "https",
+					"host": [
+						"gaymers06",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publicaciones"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5458d34b-e7af-495a-b5f4-7ae07d4b42e6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "827bce7f-8f4b-475d-87b2-f0521ecdd180",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
